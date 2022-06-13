@@ -78,6 +78,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r,       focusmaster,    {0} },
 	{ MODKEY,                       XK_space,   spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_F9,      spawn,          {.v = volup } },
+	{ MODKEY,                       XK_F8,      spawn,          {.v = volup } },
 	{ MODKEY,                       XK_F7,      spawn,          {.v = voldown } },
 	{ MODKEY,                       XK_F6,      spawn,          {.v = voltoggle } },
 	{ MODKEY,                       XK_F3,      spawn,          {.v = lightup } },
