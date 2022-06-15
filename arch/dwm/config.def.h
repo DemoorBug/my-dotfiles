@@ -9,7 +9,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 20;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 static const char *fonts[]          = { 
 "ZCOOL QingKe HuangYou:size=10:type=Regular:antialias=true:authint=true",
-"Hurmit Nerd Font Mono:pixelsize=14:type=medium:antialias=true:authint=true",
+"Hurmit Nerd Font Mono:pixelsize=20:type=medium:antialias=true:authint=true",
 };
 static const char dmenufont[]       = "Hurmit Nerd Font Mono:size=10";
 static const char col_gray1[]       = "#2e3440";

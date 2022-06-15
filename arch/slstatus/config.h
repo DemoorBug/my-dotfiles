@@ -66,14 +66,15 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ netspeed_rx, " %s - ",        "wlan0" },
+	{ netspeed_rx, "^c#6a040f^D %s - ",        "wlan0" },
 	{ netspeed_tx, "%s ",        "wlan0" },
-	{ run_command, " %s%% ",        "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits" },
+	{ run_command, "^c#9d0208^G %s%% ",        "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits" },
 	{ run_command, "%s ",        "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits | awk '{print $1\"°C\"}'" },
-	{ cpu_perc, " %s%% ",           NULL },
+	{ cpu_perc, "^c#d00000^C %s%% ",           NULL },
 	{ run_command, "%s ",       "sensors | awk -F '.' '/Package id 0/ {print $1}' | awk -F '+' '{print $2}'| awk '{print $1\"°C\"}'" },
-	{ ram_perc, " %s%% ",           NULL },
-	{ run_command, " %s ",         "amixer sget Master | awk -F '[][]' '{ print $2 }' | sed '/^s*$/d'" },
-	{ disk_free, " %s ",           "/home" },
-	{ datetime, " %s ",           "%m/%d %R" },
+	{ ram_perc, " ^c#dc2f02^ R  %s%% ",           NULL },
+	{ run_command, "^c#e85d04^ A  %s ",         "amixer sget Master | awk -F '[][]' '{ print $2 }' | sed '/^s*$/d'" },
+	{ disk_free, "^c#f48c06^DK %s ",           "/home" },
+	{ battery_perc, "^c#faa307^P %s ",           "BAT0" },
+	{ datetime, "^c#ffba08^D %s ",           "%m/%d %R" },
 };
