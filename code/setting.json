@@ -1,0 +1,223 @@
+{
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "editor.fontSize": 18,
+  "security.workspace.trust.untrustedFiles": "open",
+  "sync.gist": "6d181e56c39ad4355cb55de4cac79f09",
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,'Hack Nerd Font'",
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "none",
+  "workbench.activityBar.visible": false,
+  "window.menuBarVisibility": "toggle",
+  "tabnine.experimentalAutoImports": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.renderSideBySide": true,
+  "editor.tabSize": 2,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  // eslint prettier
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "eslint.validate": ["typescriptreact"],
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // 自动换行
+  "editor.wordWrap": "on",
+  "editor.renderLineHighlight": "none",
+  "windowColors.🌈 DeleteSettingsFileUponExit": true,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "kite.showWelcomeNotificationOnStartup": false,
+  "editor.fontWeight": 400,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  //使用系统粘贴板
+  "vim.useSystemClipboard": true,
+  //相对显示代码行数
+  "editor.lineNumbers": "relative",
+  //修复光标经过折叠代码时自动展开的 bug
+  "vim.foldfix": true,
+  //映射空格键为 easymotion Start of word 指令快捷键
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<ESC>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["<Leader>", "j"],
+      "after": ["J"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["<C-c>"],
+      "commands": ["editor.action.clipboardCopyAction"]
+    },
+    {
+      "before": ["<Leader>", "t", "t"],
+      "commands": [":tabnew"]
+    },
+    {
+      "before": ["<Leader>", "t", "n"],
+      "commands": [":tabnext"]
+    },
+    {
+      "before": ["<Leader>", "t", "p"],
+      "commands": [":tabprev"]
+    },
+    {
+      "before": ["<Leader>", "t", "o"],
+      "commands": [":tabo"]
+    },
+    {
+      "before": ["<Leader>", "/"],
+      "commands": [":noh"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<Leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<Leader>", "t"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<Leader>", "b"],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["C-f"],
+      "after": [
+        "<Leader>",
+        "<Leader>",
+        "<Leader>",
+        "b",
+        "d",
+        "w"
+      ]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["C-r"],
+      "commands": ["redo"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    }
+  ],
+  "vim.leader": "<Space>",
+  "vim.sneak": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "s"],
+      "commands": [
+        "editor.action.moveSelectionToNextFindMatch"
+      ]
+    }
+  ],
+  "vim.vimrc.enable": true,
+  "scrolloff.scrolloff": 7,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "autoDarkMode.lightIconTheme": "Ayu Light",
+  "autoDarkMode.lightTheme": "Ayu Light",
+  "autoDarkMode.darkIconTheme": "Ayu Dark",
+  "autoDarkMode.darkTheme": "Ayu Dark",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Material Theme Ocean",
+  "workbench.colorTheme": "Default Light+",
+  "editor.renderControlCharacters": false,
+  "vim.easymotion": true,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true
+  },
+  "emmet.excludeLanguages": [],
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}"
+}
