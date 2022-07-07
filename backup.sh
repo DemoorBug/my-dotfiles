@@ -17,6 +17,7 @@ cp -r $HOME/.config/st/* ./arch/st
 cp -r $HOME/.config/slstatus/* ./arch/slstatus
 cp -r $HOME/.config/dmenu/* ./arch/dmenu
 cp -r $HOME/.config/rofi/* ./arch/rofi
+# 要使用这个电源插件还必须安装xorg-xinput, dunst, polkit 这三个都可以在pacman 安装
 cp -r $HOME/.local/bin/script/* ./arch/.local/bin/script
 
 cp $HOME/.Xresources ./arch
