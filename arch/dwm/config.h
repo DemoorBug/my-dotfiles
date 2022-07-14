@@ -80,7 +80,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r,       focusmaster,    {0} },
 	{ MODKEYS,                      XK_l,      spawn,          {.v = slock} },
 	{ MODKEYS,                      XK_m,      spawn,          {.v = pOSpowermenu} },
-	{ MODKEY,                       XK_space,   spawn,          {.v = dmenucmd } },
+	{ MODKEYS,                       XK_space,   spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_F9,      spawn,          {.v = volup } },
 	{ MODKEY,                       XK_F8,      spawn,          {.v = volup } },
 	{ MODKEY,                       XK_F7,      spawn,          {.v = voldown } },
