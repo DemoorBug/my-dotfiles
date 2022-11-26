@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>bundleid</key>
-	<string>new</string>
 	<key>connections</key>
 	<dict>
 		<key>07B95FF9-2DFF-41B2-92AC-A3DC5F24F02F</key>
@@ -118,7 +116,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>new</string>
+	<string>mywork - COPY</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -264,12 +262,6 @@
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>A</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -563,6 +555,10 @@
 			<integer>565</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
