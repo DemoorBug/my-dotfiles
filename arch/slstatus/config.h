@@ -66,7 +66,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ netspeed_rx, "^c#6a040f^D %s - ",        "wlan0" },
+	{ netspeed_rx, "^c#9d0208^D %s - ",        "wlan0" },
 	{ netspeed_tx, "%s ",        "wlan0" },
 	{ run_command, "^c#9d0208^G %s%% ",        "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits" },
 	{ run_command, "%s ",        "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits | awk '{print $1\"°C\"}'" },
@@ -76,5 +76,5 @@ static const struct arg args[] = {
 	{ run_command, "^c#e85d04^ A  %s ",         "amixer sget Master | awk -F '[][]' '{ print $2 }' | sed '/^s*$/d'" },
 	{ disk_free, "^c#f48c06^DK %s ",           "/home" },
 	{ battery_perc, "^c#faa307^P %s ",           "BAT0" },
-	{ datetime, "^c#ffba08^D %s ",           "%m/%d %R" },
+	{ datetime, "^c#ffba08^D %s ",           "%m/%d %R-%u" },
 };

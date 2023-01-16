@@ -2,14 +2,14 @@
 
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
-static const unsigned int gappx     = 10;        /* gaps between windows */
+static const unsigned int gappx     = 4;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 22;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 static const char *fonts[]          = { 
 "ZCOOL QingKe HuangYou:size=10:type=Regular:antialias=true:authint=true",
-"Hurmit Nerd Font Mono:pixelsize=25:type=medium:antialias=true:authint=true",
+"Hurmit Nerd Font Mono:pixelsize=14:type=medium:antialias=true:authint=true",
 };
 static const char dmenufont[]       = "Hurmit Nerd Font Mono:size=10";
 static const char col_gray1[]       = "#2e3440";
@@ -24,7 +24,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "·", "·", "·", "·", "·", "·", "·", "·", "·" };
+static const char *tags[] = { "one", "two", "three", "four", "five", "sex", "seven", "eight", "·" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -33,7 +33,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "qv2ray",  NULL,       NULL,       1 << 8,       1,           -1 },
+	{ "qv2ray",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
@@ -72,11 +72,15 @@ static const char *volup[]  = { "/home/debug/.config/dwm/volup.sh", NULL };
 static const char *voltoggle[]  = { "/home/debug/.config/dwm/voltoggle.sh", NULL };
 static const char *lightup[]  = { "/home/debug/.config/dwm/lightup.sh", NULL };
 static const char *lightdown[]  = { "/home/debug/.config/dwm/lightdown.sh", NULL };
+static const char *slock[]  = { "slock", NULL };
+static const char *pOSpowermenu[]  = { "pOS-powermenu", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_r,       focusmaster,    {0} },
-	{ MODKEY,                       XK_space,   spawn,          {.v = dmenucmd } },
+	{ MODKEYS,                      XK_l,      spawn,          {.v = slock} },
+	{ MODKEYS,                      XK_m,      spawn,          {.v = pOSpowermenu} },
+	{ MODKEYS,                       XK_space,   spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_F9,      spawn,          {.v = volup } },
 	{ MODKEY,                       XK_F8,      spawn,          {.v = volup } },
 	{ MODKEY,                       XK_F7,      spawn,          {.v = voldown } },
