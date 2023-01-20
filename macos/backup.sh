@@ -3,7 +3,7 @@
 path="$PWD"/
 config="/Users/demoorbug/.cofnig/"
 mydotfiles="/Users/demoorbug/Developments/Mydotfiles/"
-mymacos="/Users/demoorbug/Developments/macos/"
+mymacos="/Users/demoorbug/Developments/Mydotfiles/macos/"
 
 git co macos
 if [ "$1" = "del" ]; then

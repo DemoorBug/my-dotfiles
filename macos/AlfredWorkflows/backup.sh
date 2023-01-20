@@ -1,22 +1,22 @@
 #!/bin/bash
 
 path="$PWD"/
-config="/Users/demoorbug/.config/"
+config="/Users/demoorbug/.cofnig/"
 mydotfiles="/Users/demoorbug/Developments/Mydotfiles/"
-if [ "$1" = "rm" ]; then
-rm -rf "$mydotfiles"AlfredWorkflows/
-rm -rf "$mydotfiles"fish/
-rm -rf "$mydotfiles"nvim/
+mymacos="/Users/demoorbug/Developments/Mydotfiles/macos/"
+
+git co macos
+if [ "$1" = "del" ]; then
+  del "$mymacos"AlfredWorkflows/
+  del "$mymacos"fish/
 fi
 
-cp "$config"../.gitconfig "$mydotfiles"
-cp -r "$path" "$mydotfiles"AlfredWorkflows/
-cp -r "$config"fish/ "$mydotfiles"fish
-cp -r "$config"nvim/ "$mydotfiles"nvim
+cp "$config"../.gitconfig "$mymacos"
+cp -r "$path" "$mymacos"AlfredWorkflows
+cp -r "$config"fish/ "$mymacos"fish
+cp -r "$config"../.local/user_bin "$mymacos"user_bin
 
-
-cd "$mydotfiles"
+cd "$mymacos"
 git add .
 git ci -m 'auto update'
 git ps
-
