@@ -1,0 +1,6 @@
+{
+  "Keymap": { 
+    "Tab": "peco.SelectUp",
+    "M-[,Z": "peco.SelectDown"
+  }
+}
