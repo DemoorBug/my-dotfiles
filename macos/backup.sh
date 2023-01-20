@@ -17,6 +17,7 @@ rsync -av --exclude "node_modules" "$path" "$mymacos"AlfredWorkflows
 
 cp -r "$config"fish/ "$mymacos"fish
 cp -r "$config"../.local/user_bin/ "$mymacos"user_bin
+cp -r "$config"peco/ "$mymacos"peco
 
 git add .
 git ci -m 'auto update'
