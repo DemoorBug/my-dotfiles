@@ -1,8 +1,7 @@
 #!/bin/bash
 
 path="$PWD"/
-config="/Users/demoorbug/.cofnig/"
-mydotfiles="/Users/demoorbug/Developments/Mydotfiles/"
+config="/Users/demoorbug/.config/"
 mymacos="/Users/demoorbug/Developments/Mydotfiles/macos/"
 
 cd "$mymacos"
@@ -15,7 +14,7 @@ fi
 cp "$config"../.gitconfig "$mymacos"
 cp -r "$path" "$mymacos"AlfredWorkflows
 cp -r "$config"fish/ "$mymacos"fish
-cp -r "$config"../.local/user_bin "$mymacos"user_bin
+cp -r "$config"../.local/user_bin/ "$mymacos"user_bin
 
 git add .
 git ci -m 'auto update'
