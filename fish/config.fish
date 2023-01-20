@@ -17,6 +17,10 @@ alias adblink "scrcpy -Sw --shortcut-mod=rsuper,lctrl+rsuper & VLC=/Applications
 alias lg "lazygit"
 alias ghs "ghs.bash"
 alias y "y.bash"
+alias path "path.bash"
+alias del "trash"
+
+alias rm "echo Use 'trash' app to move files into trash. If you really need rm, use the full path i.e. '/bin/rm'"
 
 set -x NVM_DIR ~/.nvm
 nvm use default --silent

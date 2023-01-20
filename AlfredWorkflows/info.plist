@@ -7,18 +7,7 @@
 	<key>connections</key>
 	<dict>
 		<key>07B95FF9-2DFF-41B2-92AC-A3DC5F24F02F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6A39CAF6-C65C-4625-9436-49B8E709F0BD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>0C6217A8-51FA-4274-ABC1-B4997EC7129D</key>
 		<array>
 			<dict>
@@ -72,18 +61,7 @@
 			</dict>
 		</array>
 		<key>A9CE044A-8F52-4B8B-B18F-99C26CFB8C27</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6A39CAF6-C65C-4625-9436-49B8E709F0BD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>B12548A0-598A-4FE2-9F95-1E923742A06C</key>
 		<array>
 			<dict>
@@ -235,10 +213,33 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/Users/demoorbug/.nvm/versions/node/v19.0.0/bin/node /Users/demoorbug/Developments/notion-database/index.js hhbaasdkjf</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0C8C37CD-9F97-4DC3-9E19-FA3399F8813E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>w</string>
+				<string>wttetstst</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -371,25 +372,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://zimuku.org/search?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>BF693AD2-1A08-43A6-8AC1-19145B92382D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -405,6 +387,25 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>B12548A0-598A-4FE2-9F95-1E923742A06C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://zimuku.org/search?q={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>BF693AD2-1A08-43A6-8AC1-19145B92382D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -471,6 +472,13 @@
 			<key>ypos</key>
 			<integer>690</integer>
 		</dict>
+		<key>0C8C37CD-9F97-4DC3-9E19-FA3399F8813E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>320</integer>
+		</dict>
 		<key>1531BCB8-1E10-4174-9724-97C94AE3106F</key>
 		<dict>
 			<key>xpos</key>
@@ -509,9 +517,9 @@
 		<key>6A39CAF6-C65C-4625-9436-49B8E709F0BD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>555</integer>
 			<key>ypos</key>
-			<integer>320</integer>
+			<integer>315</integer>
 		</dict>
 		<key>A318FD3C-3981-48A0-820C-2FBDAA4CEC4D</key>
 		<dict>

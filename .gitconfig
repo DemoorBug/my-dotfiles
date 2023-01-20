@@ -26,6 +26,11 @@
   ba = branch -a
   bm = branch --merged
   bn = branch --no-merged
+  rv = remote -v
+
+  # 此操作危险，如果在本地删除了某个历史commit，使用此命令就会导致线上代码同样丢失，除非万不得已，谨慎使用
+  pforce = "!git push origin $(git rev-parse --abbrev-ref HEAD) -f"
+
   df = "!git hist | peco | awk '{print $2}' | xargs -I {} git diff {}^ {}"
   hist = log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all
   llog = log --graph --name-status --pretty=format:\"%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset\" --date=relative
@@ -39,3 +44,8 @@
   add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
 [hub]
   protocol = https
+[http]
+	sslVerify = false
+	proxy = http://127.0.0.1:31181
+[https]
+	proxy = http://127.0.0.1:31181

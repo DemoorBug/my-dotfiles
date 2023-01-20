@@ -8,10 +8,10 @@ function fish_user_key_bindings
 
   # prevent iterm2 from closing when typing Ctrl-D (EOF)
   bind \cd delete-char
-  bind \cp forward-word
-  #bind \ch backward-char
+
+  bind \ch backward-char
   #bind \cH backward-word
-  #bind \cl forward-char
+  bind \cl forward-char
   #bind \cL forward-word
   # bind \cz undo
   bind \cb redo
