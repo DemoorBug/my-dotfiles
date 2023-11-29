@@ -1,1 +1,0 @@
-/Users/demoorbug/Developments/Mydotfiles/macos/backup.sh
